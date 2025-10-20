@@ -1,0 +1,114 @@
+# =========================================
+# DeepSC-S Project .gitignore
+# =========================================
+
+# -------- Python 通用 --------
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+*.egg
+*.log
+*.out
+*.bak
+*.swp
+.DS_Store
+.env
+venv/
+.venv/
+ENV/
+env/
+
+# -------- VSCode / 编辑器 缓存 --------
+.vscode/
+.idea/
+.history/
+.bash_history
+
+# -------- TensorFlow / 深度学习 缓存 --------
+.checkpoints/
+.saved_model/
+trained_outputs/
+logs/
+events.out.tfevents.*
+*.pb
+*.h5
+*.ckpt
+*.ckpt.*
+*.tfrecord
+*.npz
+*.npy
+
+# -------- 临时文件 / 实验输出 --------
+demo_input/
+demo_out/
+demo_out1/
+demo_intermediate/
+demo_intermediate1/
+npz_csv/
+resampled_8k/
+sample/
+workspace/
+tmp/
+temp/
+output/
+outputs/
+
+# -------- 数据集文件 --------
+data_raw_8k/
+data_tfrecords_8k/
+*.wav
+*.mat
+*.csv
+*.zip
+*.tar
+*.tar.gz
+
+# -------- Python 虚拟环境 / 用户目录 --------
+.cache/
+.config/
+.kaggle/
+.keras/
+.local/
+.nv/
+
+# -------- 系统文件 --------
+Thumbs.db
+desktop.ini
+
+# -------- 压缩包 / 备份 --------
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# -------- Notebook 检查点 --------
+.ipynb_checkpoints/
+
+# -------- Docker 相关 --------
+*.pid
+*.sock
+*.log
+docker-compose*.yml
+Dockerfile
+
+# -------- 特定项目文件 --------
+DeepSC-S-main/__pycache__/
+DeepSC-S-main/*.log
+DeepSC-S-main/*.npz
+DeepSC-S-main/*.csv
+DeepSC-S-main/*.tfrecords
+DeepSC-S-main/demo_intermediate*/
+DeepSC-S-main/demo_out*/
+DeepSC-S-main/npz_csv/
+DeepSC-S-main/resampled_8k/
+DeepSC-S-main/trained_outputs/
+DeepSC-S-main/sample/
+
+# -------- 保留文件 --------
+!DeepSC-S-main/*.py
+!DeepSC-S-main/README.md
+!DeepSC-S-main/LICENSE
+!DeepSC-S-main/.gitignore
